@@ -18,6 +18,21 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(scss|sass)$/,
+        // include: resolve('src'),
+        use: [
+          'style-loader',
+          // 模块化的sass
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,// 开启模块化
+            }
+          },
+          'sass-loader',
+        ]
       }
     ]
   },

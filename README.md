@@ -7,3 +7,6 @@
     1. 在组件项目下npm link，与全局模块链接
     1. 在其他项目中下通过npm link xxx(自己设定的组件名字) 链接模块
     1. 在项目中通过import导入包进行测试 
+1. 删除默认的远程地址：``git remote rm origin``
+1. 添加自己的远程地址 ``git remote add origin http://xxxxxxxxx.git``
+1. 提交自己的版本
