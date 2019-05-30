@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import Component from './Component';
 
-ReactDOM.render(<Component/>, document.getElementById('app'));
+import { Dialog, Alert, Message } from './Dialog'
+ReactDOM.render(<Dialog visible={true}/>, document.getElementById('app'))
